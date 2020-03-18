@@ -32,8 +32,8 @@ DROPOUT = None                     # Fraction of the units to drop for the linea
 NUM_EPOCHS = None                  # Number of epochs to train a model for
 
 
-label2emotion = {0:"others", 1:"happy", 2: "sad", 3:"angry"}
-emotion2label = {"others":0, "happy":1, "sad":2, "angry":3}
+label2emotion = {0:"NOT_SARCASM", 1:"SARCASM"}
+emotion2label = {"NOT_SARCASM":0, "SARCASM":1}
 
 
 def preprocessData(dataFilePath, mode):
